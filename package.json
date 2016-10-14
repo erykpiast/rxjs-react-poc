@@ -1,6 +1,6 @@
 {
   "name": "rxjs-react-poc",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Just a seed for RxJS + React + Webpack",
   "main": "dist/index.js",
   "author": "eryk.piast@gmail.com",
