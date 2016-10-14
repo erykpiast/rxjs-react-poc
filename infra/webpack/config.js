@@ -26,7 +26,6 @@ module.exports = {
   output: {
     filename: '[hash].js',
     path: path.resolve('./dist'),
-    publicPath: '/',
   },
   plugins: [
     new Html({

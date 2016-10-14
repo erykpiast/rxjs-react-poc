@@ -3,6 +3,7 @@ const merge = require('webpack-merge');
 const webpack = require('webpack');
 
 const config = require('./config');
+const packageName = require('../../package.json').name;
 
 module.exports = merge(config, {
   module: {
@@ -18,6 +19,9 @@ module.exports = merge(config, {
         'sass',
       ]),
     }],
+  },
+  output: {
+    publicPath: `/${packageName}/`,
   },
   plugins: [
     new Extract('[hash].css'),

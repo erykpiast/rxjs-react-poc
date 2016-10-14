@@ -28,6 +28,9 @@ module.exports = merge(config, {
       ],
     }],
   },
+  output: {
+    publicPath: '/',
+  },
   plugins: [
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': '"development"',

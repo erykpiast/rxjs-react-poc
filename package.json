@@ -1,5 +1,5 @@
 {
-  "name": "webpack-rxjs-react-seed",
+  "name": "rxjs-react-poc",
   "version": "0.0.0",
   "description": "Just a seed for RxJS + React + Webpack",
   "main": "dist/index.js",
@@ -24,12 +24,12 @@
     "publish": "git add dist/ && git commit -m \"update compiled files\" dist && git push; exit 0",
     "prerelease": "git checkout master",
     "postpublish": "git push origin master --tags && npm run update-gh-pages",
-    "release-patch": "npm run publish && npm version patch && npm run postpublish",
-    "release-minor": "npm run publish && npm version minor && npm run postpublish",
-    "release-major": "npm run publish && npm version major && npm run postpublish",
-    "pre-patch": "npm run publish && npm version prepatch && npm run postpublish",
-    "pre-minor": "npm run publish && npm version preminor && npm run postpublish",
-    "pre-major": "npm run publish && npm version premajor && npm run postpublish",
+    "release:patch": "npm run publish && npm version patch && npm run postpublish",
+    "release:minor": "npm run publish && npm version minor && npm run postpublish",
+    "release:major": "npm run publish && npm version major && npm run postpublish",
+    "pre:patch": "npm run publish && npm version prepatch && npm run postpublish",
+    "pre:minor": "npm run publish && npm version preminor && npm run postpublish",
+    "pre:major": "npm run publish && npm version premajor && npm run postpublish",
     "pre": "npm run publish && npm version pre && npm run postpublish"
   },
   "dependencies": {
