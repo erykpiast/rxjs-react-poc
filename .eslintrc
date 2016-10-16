@@ -4,8 +4,10 @@
     "browser": true,
     "node": true
   },
+  "parser": "babel-eslint",
   "rules": {
     "react/forbid-prop-types": ["error", {"forbid": ["any"]}],
+    "react/no-unused-prop-types": ["error", {"skipShapeProps": true}]
   },
   "settings": {
     "import/resolver": {
